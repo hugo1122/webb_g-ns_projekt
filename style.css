@@ -35,18 +35,19 @@ h5
 
 */
 
-
+#nav-streck
+{
+    background-color: #273469;
+    height: 10px;
+}
 
 
 
 /*regler bara för index*/
 .hero /*div som omringar p taggarna.*/
 {
-    background-color: #E4D9FF;
+    background-color: #1E2749;
     height: 300px;
-
-    position: relative;
-    top: 40px;
 }
 
 #p1 /*vänstra divven hoppas jag*/
@@ -58,6 +59,8 @@ h5
     position: relative;
     left: 20%;
     top: 40px;
+
+    color: #FAFAFF;
 }
 
 #p2 /*förklarar sig själv*/
@@ -69,6 +72,8 @@ h5
     position: relative;
     left: 20%;
     top: 110px;
+    
+    color: #FAFAFF;
 }
 
 
