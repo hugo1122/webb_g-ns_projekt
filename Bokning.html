@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <script src="java.js"></script>
 </head>
 
 <body>
@@ -39,101 +40,92 @@
             <input type="checkbox" class="custom-control-input" id="customSwitch1">
             <label class="custom-control-label" for="customSwitch1">Tema</label><!--------------------------------------byter tema samt text------------------------------------------------------->
           </div>          
-      </nav>
+    </nav>
 
-      <div id="info-bokning">
-          <!--kort text om vad användaren gör på sidan-->
-      </div>
+    <div id="nav-streck">
+        <!--**astetiskt**-->
+    </div>
 
-        <form onsubmit="return false;">
-    
-            <table>
+    <div id="info-bokning">
+        <!--kort text om vad användaren gör på sidan-->
+    </div>
 
-                <tbody>
-                    <tr>
-                        <td><label for="namn">Ange ditt namn:</label></td>
-                        <td><label for="mail">Ange din maiaddress</label></td>
-                        <td><label for="tel">Ange ditt telefonnummer:</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="namn" id="namn" required="" placeholder="Sven Svensson"></td>
-                        <td><input type="email" name="mail" required="" placeholder="sven.svensson@gmail.com"></td>
-                        <td><input type="number" name="tel" id="tel" required="" placeholder="0123456789"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="bil">Ange din bil:</label></td>
-                        <td><label for="tjänst">Ange tjänst:</label></td>
-                        <td><label for="reg">Ange bilens regristreringgsnummer:</label></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select name="bil" id="bil" required="">
-                                <option value="">Välj bilmärke</option>
-                                <option value="Volvo">Volvo</option>
-                                <option value="BMW">BMW</option>
-                                <option value="Mercedes">Mercedes</option>
-                                <option value="Audi">Audi</option>
-                                <option value="Honda"></option>
-                                <option value="Volkswagen">Volkswagen</option>
-                                <option value="Mazda">Mazda</option>
-                                <option value="Toyota">Toyota</option>
-                                <option value="Nissan">Nissan</option>
-                            </select>
-                        </td>
-                        <td>
-                            <select name="tjänst" id="tjänst" required="">
-                                <option value="Felsökning">Felsökning</option>
-                                <option value="Service">Service</option>
-                                <option value="Växelådesbyte">Växelådesbyte</option>
-                                <option value="Elfel">Elfel</option>
-                                <option value="Bromsbyten">Bromsbyten</option>
-                                <option value="Kamremsbyte">Kamremsbyte</option>
-                                <option value="Byte av länkarm">Byte av länkarm</option>
-                                <option value="Hjulinställningar">Hjulinställningar</option>
-                                <option value="Plåtarbete">Plåtarbete</option>
-                            </select>
-                        </td>
-                        <td>
-                            <input type="text" name="reg" required="" placeholder="ABC123">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="date">Välj datum:</label></td>
-                        <td><label for="tid">Välj tid:</label></td>
-                        <td><label for="boka"></label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="date" name="date" id="date" required=""></td>
-                        <td><input type="time" name="tid" id="tid" required=""></td>
-                        <td><input type="submit" value="Boka" onclick="myFunction();" id="boka"></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table id="table">
-                <tbody>
-                    <tr>
-                        <th>Namn</th>
-                        <th>Mail</th>
-                        <th>Tel.</th>
-                        <th>Bil</th>
-                        <th>Reg.</th>
-                        <th>Tjänst</th>
-                        <th>Datum</th>
-                        <th>Tid</th>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-
-
-
-
-
-
-
-
-
-
+    <form onsubmit="return false;"> 
+        <table> 
+            <tbody>
+                <tr> 
+                    <td><label for="name">Namn:</label></td>     
+                    <td><label for="eMail">Mail:</label></td>         
+                    <td><label for="tel">Telefon:</label></td> 
+                </tr>
+                <tr>
+                    <td><input type="text" name="name" id="name" required="" placeholder="Anders Andersson" tabindex="2"></td> 
+                    <td><input type="email" name="eMail" id="eMail" required="" placeholder="anders.andersson@gmail.com" tabindex="3"></td>
+                    <td><input type="number" name="tel" id="tel" required="" placeholder="0708456394" tabindex="4"></td>
+                </tr> 
+                <tr> 
+                    <td><label for="cars">Ange din bil:</label></td> 
+                    <td><label for="Tjänst">Ange typ av tjänst:</label></td> 
+                    <td><label for="reg">Ange ditt regnummer:</label></td> 
+                </tr> 
+                <tr> 
+                    <td> 
+                        <select name="cars" id="cars" required="" tabindex="5"> 
+                            <option value="">Välj bil</option> 
+                            <option value="Volvo">Volvo</option> 
+                            <option value="BMW">BMW</option> 
+                            <option value="Mercedes">Mercedes</option> 
+                            <option value="Audi">Audi</option> 
+                            <option value="Honda">Honda</option> 
+                            <option value="Volkswagen">Volkswagen</option> 
+                            <option value="Mazda">Mazda</option> 
+                            <option value="Toyota">Toyota</option> 
+                            <option value="Nissan">Nissan</option> 
+                        </select> 
+                    </td>  
+                    <td> 
+                        <select name="tjänst" id="tjänst" required="" tabindex="6">  
+                            <option value="">Välj tjänst</option>  
+                            <option value="Felsökning">Felsökning</option> 
+                            <option value="Service">Service</option> 
+                            <option value="Växellådebyte">Växellådebyte</option> 
+                            <option value="Elfel">Elfel</option> 
+                            <option value="Bromsbyten">Bromsbyten</option>
+                            <option value="Kammremmsbyte">Kammremmsbyte</option> 
+                            <option value="Byte av länkarm">Byte av länkarm</option>
+                            <option value="Hjulinställning">Hjulinställning</option>
+                            <option value="Plåtarbete">Plåtarbete</option>
+                        </select> 
+                    </td> 
+                    <td><input type="text" name="reg" id="reg" required="" placeholder="ABC123" tabindex="7"></td>
+                </tr>
+                <tr> 
+                    <td><label for="date">Ange datum:</label></td> 
+                    <td><label for="time">Ange tid:</label></td> 
+                    <td><label for="book">Boka</label></td> 
+                </tr>      
+                <tr> 
+                    <td><input type="date" name="date" id="date" required="" tabindex="8"></td> 
+                    <td><input type="time" name="time" id="time" required="" tabindex="9"></td>
+                    <td><input type="submit" value="Boka" onclick="myFunction();" id="book" tabindex="10"></td> 
+                </tr> 
+            </tbody>
+        </table> 
+        <table id="table"> 
+            <tbody>
+                <tr> 
+                    <th>Namn</th> 
+                    <th>Mail</th> 
+                    <th>Tel.</th> 
+                    <th>Bil</th> 
+                    <th>Reg.</th> 
+                    <th>Tjänst</th> 
+                    <th>Datum</th> 
+                    <th>Tid</th> 
+                </tr> 
+            </tbody>
+        </table>     
+    </form> 
 
 
       <footer class="bg-light text-center text-lg-start">

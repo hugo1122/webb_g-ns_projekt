@@ -1,12 +1,12 @@
+//script för bokning
 function myFunction() 
 { 
     var data = Check() 
- 
     if(data == true) 
     { 
         var tbl = document.getElementById ("table"); 
         var nRow = tbl.insertRow (); 
-
+        
         var cN = nRow.insertCell(); 
         var cM = nRow.insertCell(); 
         var cT = nRow.insertCell(); 
@@ -15,43 +15,32 @@ function myFunction()
         var cS = nRow.insertCell(); 
         var cD = nRow.insertCell(); 
         var cTt = nRow.insertCell(); 
-
-
-        cN.innerHTML = document.getElementById("namn").value; 
-        cM.innerHTML = document.getElementById("mail").value; 
+        
+        cN.innerHTML = document.getElementById("name").value; 
+        cM.innerHTML = document.getElementById("eMail").value; 
         cT.innerHTML = document.getElementById("tel").value; 
-        cC.innerHTML = document.getElementById("bil").value; 
-        cR.innerHTML = document.getElementById("tjänst").value; 
-        cS.innerHTML = document.getElementById("reg").value; 
-        cD.innerHTML = document.getElementById("datum").value; 
-        cTt.innerHTML = document.getElementById("tid").value;  
+        cC.innerHTML = document.getElementById("cars").value; 
+        cR.innerHTML = document.getElementById("reg").value; 
+        cS.innerHTML = document.getElementById("tjänst").value; 
+        cD.innerHTML = document.getElementById("date").value; 
+        cTt.innerHTML = document.getElementById("time").value;  
     } 
 } 
-function Check() 
+//kollar så att alla fält för bokning är ifyllda
+function Check()
 { 
-    //checks if everything is inputted corectly and  
-    //notices the user of any mistakes and does not allow  
-    //booking if all data is not correct 
-
     var validEntry = true; 
 
-    var n = document.getElementById("namn");
+    var n = document.getElementById("name"); 
     if(n.value == "") 
     { 
         n.focus(); 
         validEntry = false; 
     } 
 
-    n = document.getElementById("mail") 
+    n = document.getElementById("eMail") 
     if(n.value == "") 
-    {
-        n.focus();
-        validEntry = false;
-    } 
-
-    n = document.getElementById("tel")
-    if(n.value == "")
-    {
+    { 
         n.focus(); 
         validEntry = false; 
     } 
@@ -61,7 +50,7 @@ function Check()
     { 
         n.focus(); 
         validEntry = false; 
-    }  
+    } 
 
     n = document.getElementById("cars"); 
     if(n.value == "") 
@@ -70,11 +59,11 @@ function Check()
         validEntry = false; 
     } 
 
-    n = document.getElementById("service"); 
+    n = document.getElementById("tjänst"); 
     if(n.value == "") 
     { 
         n.focus(); 
-        validEntry = false;
+        validEntry = false; 
     } 
 
     n = document.getElementById("reg"); 
@@ -82,14 +71,14 @@ function Check()
     { 
         n.focus(); 
         validEntry = false; 
-    }
+    } 
 
     n = document.getElementById("date"); 
     if(n.value == "") 
     { 
         n.focus(); 
-    validEntry = false; 
-    } 
+        validEntry = false; 
+    }    
 
     n = document.getElementById("time"); 
     if(n.value == "") 
@@ -97,6 +86,5 @@ function Check()
         n.focus(); 
         validEntry = false; 
     } 
-
     return validEntry; 
-} 
+}
