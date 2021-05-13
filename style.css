@@ -1,0 +1,93 @@
+/*allmänna regeler*/
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*
+h1
+{
+
+}
+
+h2
+{
+
+}
+
+h3
+{
+
+}
+
+h4
+{
+
+}
+
+h5
+{
+
+}
+
+*/
+
+
+
+
+
+/*regler bara för index*/
+.hero /*div som omringar p taggarna.*/
+{
+    background-color: #E4D9FF;
+    height: 300px;
+
+    position: relative;
+    top: 40px;
+}
+
+#p1 /*vänstra divven hoppas jag*/
+{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+
+    position: relative;
+    left: 20%;
+    top: 40px;
+}
+
+#p2 /*förklarar sig själv*/
+{
+    display: inline-block;
+    width: 30%;
+    height: auto;
+
+    position: relative;
+    left: 20%;
+    top: 110px;
+}
+
+
+
+/*regler bara för bokning*/
+
+
+
+/*regler bara för kontakt*/
+
+
+
+
+
+
+/*.navbar-brand     gör färgen på texten till en gradient typ en fade mellan 2 färger :)
+{
+    font-weight: bold;
+    background: linear-gradient(to right, #1E2749, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}*/
