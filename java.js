@@ -1,4 +1,4 @@
-//script för bokning
+//bygger en tabell som visar kundens bokning
 function myFunction() 
 { 
     var data = Check() 
@@ -88,3 +88,74 @@ function Check()
     } 
     return validEntry; 
 }
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//joels kod bygger en tabell som visar medelandet--------------------------------------------------------------------------------------------------------------------------------------------------
+function myScndFunction() 
+{
+    var hasData = InputHasData();
+    if (hasData == true) {
+        var tbl = document.getElementById("tbl");
+        var row = tbl.insertRow();
+        var cell1 = row.insertCell();
+        var cell2 = row.insertCell();
+        var cell3 = row.insertCell();
+        var cell4 = row.insertCell();     
+
+        var serv = document.getElementById("Service2");
+
+        cell1.innerHTML = document.getElementById("namn2").value;
+        cell2.innerHTML = document.getElementById("email2").value;        
+        cell3.innerHTML = document.getElementById("datum2").value;
+        cell4.innerHTML = serv.options[serv.selectedIndex].value;
+    }
+}
+//kollar så att alla medelande fält är ifyllda
+function InputHasData() 
+{
+    var validEntry = true;
+
+    var n = document.getElementById("namn2");
+    if (n.value == "") 
+    {
+        n.focus();
+        validEntry = false;
+    }
+
+    n = document.getElementById("email2");
+    if (n.value == "") 
+    {
+        n.focus();
+        validEntry = false;
+    }
+
+    n = document.getElementById("datum2");
+    if (n.value == "") 
+    {
+        n.focus();
+        validEntry = false;
+    }
+
+    n = document.getElementById("Service2");
+    if (n.value == "-1") 
+    {
+        n.focus();
+        validEntry = false;
+    }
+
+    n = document.getElementById("txtarea2");
+    if (n.value == "") 
+    {
+        n.focus();
+        validEntry = false;
+    }
+
+    return validEntry;
+}
+
+
+
+
+//byter tema om de funkar...
