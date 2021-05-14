@@ -7,7 +7,7 @@
 }
 
 
-/*
+/*fonts...
 h1
 {
 
@@ -33,6 +33,11 @@ h5
 
 }
 
+p
+{
+
+}
+
 */
 
 #nav-streck
@@ -41,7 +46,10 @@ h5
     height: 10px;
 }
 
-
+#nav
+{
+    height: 20%;
+}
 
 /*regler bara för index*/
 .hero /*div som omringar p taggarna.*/
@@ -89,19 +97,20 @@ h5
     margin-left: 12.5%;
 }
 
-
+.img
+{
+    height: 150px;
+    width: auto;
+}
 
 /*regler bara för bokning*/
-
-
-
-
-
-
-
-
-
-
+table
+{
+    width: 80%;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
 
 
 

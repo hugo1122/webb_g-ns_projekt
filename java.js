@@ -1,3 +1,10 @@
+//"stännger av" css filen för mörkt tema
+function fStart()
+{
+    
+    
+}
+
 //bygger en tabell som visar kundens bokning
 function myFunction() 
 { 
@@ -155,7 +162,14 @@ function InputHasData()
     return validEntry;
 }
 
+//ska byta mellan css filerna
+//function functionTema()
+//{
+    
 
 
-
-//byter tema om de funkar...
+    //if(tema == 1)
+    //{
+        //getElementById("dark");
+    //}
+//}

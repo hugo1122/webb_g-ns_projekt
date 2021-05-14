@@ -10,13 +10,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--mina css/js filer-->
+  <script src="java.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="fStart()">
 
   <!--navbar, innehåller logga och länkar till de andra sidorna, eventuellt droppdown med ankarlänkar? :J-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
         <a class="navbar-brand" href="Index.html">Habo Bil & Motor AB</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,8 +39,8 @@
         </div>
 
         <div class="custom-control custom-switch">
-          <input type="checkbox" class="custom-control-input" id="customSwitch1">
-          <label class="custom-control-label" for="customSwitch1">Tema</label><!--------------------------------------byter tema samt text??---------------------------------------------------->
+          <input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="functionTema();">
+          <label class="custom-control-label" for="customSwitch1">Tema</label><!--------------------------------------byter tema----------------------------------------->
         </div>        
       </nav>
 
@@ -56,83 +58,74 @@
       <div id="korten">
 
         <div class="cardB1">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Felsökning</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/felsokning.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="cardB1">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Service</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/serviceNY.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="cardB1">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Växellådebyte</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/vaxelladsbyte.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
         <div class="cardB2">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Elfel</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/elarbete-fiat.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="cardB2">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Bromsbyten</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/vad-kostar-hur-mycket-kostar-renault-bromsbyte.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="cardB2">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Kammremmsbyte</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/byta-kmarem-lasingoo-672x343.png" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
         <div class="cardB3">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Byte av länkarm</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/Querlenker-wechseln-2.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="cardB3">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Hjulinställning</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/Hjulinställning.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
         <div class="cardB3">
-          <h3 class="card-header">Featured</h3>
+          <h3 class="card-header">Plåtarbete</h3>
           <div class="card-body">
-            <h4 class="card-title">Special title treatment</h4>
+            <img src="./bilder/skadebesiktning_holmgrensbil_3000x2000.jpg" alt="bild" class="img">
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#!" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
 
       </div>
         
-      
+
       <footer class="bg-light text-center text-lg-start">
         <div class="container p-4">
           <div class="row">
