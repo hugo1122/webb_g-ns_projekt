@@ -10,19 +10,11 @@
 h1
 {
     font-family: 'PT Serif', serif;
-    font-weight: bold;
-    background: linear-gradient(to right, #1E2749, #273469);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 h3
 {
     font-family: 'PT Serif', serif;
-    font-weight: bold;
-    background: linear-gradient(to right, #1E2749, #273969);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 label
@@ -56,6 +48,15 @@ a
     height: 130px;
 }
 
+.clr
+{
+    font-weight: bold;
+    background: linear-gradient(to right, #1E2749, #273969);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 table /*bägge tabellerna får bra storlek samnt position*/
 {
     width: 80%;
@@ -79,7 +80,7 @@ table /*bägge tabellerna får bra storlek samnt position*/
 
     position: relative;
     left: 20%;
-    top: 40px;
+    top: 70px;
 
     color: #FAFAFF;
 }
@@ -100,6 +101,8 @@ table /*bägge tabellerna får bra storlek samnt position*/
 .cardB1, .cardB2, .cardB3 /*kortens position*/
 {
     display: inline-block;
+    width: 30%;
+    height: 20%;
 }
 
 #korten /*kortens position*/
@@ -116,16 +119,12 @@ table /*bägge tabellerna får bra storlek samnt position*/
     width: auto;
 }
 
-.card-text /*texten ska hålla sig innom kortet*/
-{
-    width: 40%;
-}
-
 .card-header
 {
     background-color: #1E2749;
     color: #FAFAFF;
 }
+
 
 /*regler bara för bokning*/
 
