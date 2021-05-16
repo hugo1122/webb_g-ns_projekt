@@ -13,12 +13,14 @@
   <!--mina css/js filer-->
   <script src="java.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&family=PT+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-      <a class="navbar-brand" href="Index.html">Habo Bil & Motor AB</a>
+    <h3>Habo Bil & Motor AB</h3>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,12 +37,7 @@
                 <a class="nav-link" href="Kontakt.html">Kontakt <span class="sr-only">(current)</span></a>
             </li>
           </ul>
-        </div>
-
-        <div class="custom-control custom-switch">
-            <input type="checkbox" class="custom-control-input" id="customSwitch1">
-            <label class="custom-control-label" for="customSwitch1">Tema</label><!--------------------------------------byter tema samt text------------------------------------------------------->
-          </div>          
+        </div>        
       </nav>
 
       <div id="nav-streck">
@@ -56,17 +53,17 @@
             <tr>
               <td class="tblTd">
                   Namn
-                  <input placeholder="Anders Andersson" type="text" id="namn2" name="namn2" maxlength="20" />
+                  <input placeholder="Anders Andersson" type="text" id="namn2" name="namn2" maxlength="20" required="" />
                   <br />
                   <label id="lblnamn"></label>
                   <br />
                   Email
-                  <input placeholder="Anders@gmail.com" type="text" id="email2" name="email2" maxlength="30" />
+                  <input placeholder="Anders@gmail.com" type="text" id="email2" name="email2" maxlength="30" required="" />
                   <br />
                   <label id="lblemail"></label>
                   <br />
                   Anledning
-                  <select name="Service2" id="Service2">
+                  <select name="Service2" id="Service2" required="">
                       <option value="-1">Kontaktanledning</option>
                       <option value="">Kundtjänst</option>
                       <option value="">Ansökan arbete</option>
@@ -77,13 +74,13 @@
                   <label id="lblservice"></label>
                   <br />
                   Datum
-                  <input type="date" id="datum2" name="datum2">
+                  <input type="date" id="datum2" name="datum2" required="">
                   <br />
                   <label id="lbldatum"></label>
                   <br /> <br />
               </td>
               <td class="tblTd">
-                <textarea placeholder="Skriv ditt meddelande..." name="txtarea2" id="txtarea2" cols="30" rows="8" maxlength="50"></textarea>
+                <textarea placeholder="Skriv ditt meddelande..." name="txtarea2" id="txtarea2" cols="30" rows="8" maxlength="50" required=""></textarea>
                 <br />
                 <label id="lbltextyta"></label>
                 <br />

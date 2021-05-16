@@ -10,39 +10,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!--mina css/js filer-->
+  <!--mina css/js filer under-->
   <script src="java.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&family=PT+Serif&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body onload="fStart()">
 
   <!--navbar, innehåller logga och länkar till de andra sidorna, eventuellt droppdown med ankarlänkar? :J-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
-        <a class="navbar-brand" href="Index.html">Habo Bil & Motor AB</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="Index.html">Hem <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Bokning.html">Bokning</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Kontakt.html">Kontakt</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="custom-control custom-switch">
-          <input type="checkbox" class="custom-control-input" id="customSwitch1" onclick="functionTema();">
-          <label class="custom-control-label" for="customSwitch1">Tema</label><!--------------------------------------byter tema----------------------------------------->
-        </div>        
-      </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <h3>Habo Bil & Motor AB</h3>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Index.html">Hem <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Bokning.html">Bokning</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Kontakt.html">Kontakt</a>
+        </li>
+      </ul>
+    </div>        
+  </nav>
 
       <div id="nav-streck">
         <!--**astetiskt** streck under navbaren-->
@@ -61,21 +58,21 @@
           <h3 class="card-header">Felsökning</h3>
           <div class="card-body">
             <img src="./bilder/felsokning.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Vissa bilar har fler källkoder än vad en Boeing har! Med felsökning menar man en avläsning av bilens felminne. Med hjälp av en teknik som kallas bildiagnostik scannas bilens information och berörda fordonskomponenter kontrolleras. Du får en felrapport och en offert för bilreparation.</p>
           </div>
         </div>
         <div class="cardB1">
           <h3 class="card-header">Service</h3>
           <div class="card-body">
             <img src="./bilder/serviceNY.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">En bilservice är ett underhåll som genomförs för att bilens prestanda ska bibehållas. Den innehåller många olika kontrollpunkter som ska utföras vid förutbestämda intervaller. Dessa kontrollpunkter och serviceintervall är specifika för olika bilmärken och modeller.</p>
           </div>
         </div>
         <div class="cardB1">
           <h3 class="card-header">Växellådebyte</h3>
           <div class="card-body">
             <img src="./bilder/vaxelladsbyte.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Har växellådan i din bil helt havererat eller skrapar den och för väsen kan ett byte av växellåda vara aktuellt.</p>
           </div>
         </div>
 
@@ -83,21 +80,21 @@
           <h3 class="card-header">Elfel</h3>
           <div class="card-body">
             <img src="./bilder/elarbete-fiat.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Både nya och äldre bilar drabbas av olika elfel. Livsfarliga elfel är vanliga även i nyare bilar tyvärr. Några vanliga fel på bilen när det kommer till elektroniken kan vara: att motorlampan lyser, ett avbrott i ABS-systemets strömförsörjning, problem med krockkuddarna m.m.</p>
           </div>
         </div>
         <div class="cardB2">
-          <h3 class="card-header">Bromsbyten</h3>
+          <h3 class="card-header">Bromsservice</h3>
           <div class="card-body">
             <img src="./bilder/vad-kostar-hur-mycket-kostar-renault-bromsbyte.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Ett bromssystem består bland annat av bromsklossar, bromsbelägg och bromsskivor. Dessa delar är utsatta för slitage och rostangrepp. En bromsservice innebär att en eller flera av delar av bromssystemet byts ut. Bromsarna är den viktigaste säkerhetsutrustningen på din bil.</p>
           </div>
         </div>
         <div class="cardB2">
           <h3 class="card-header">Kammremmsbyte</h3>
           <div class="card-body">
             <img src="./bilder/byta-kmarem-lasingoo-672x343.png" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">Kamremmen är en del av bilens interna förbränningsmotor. Den går runt olika axlar i bilen för att överföra rotationsenergi som rör sig i en speciell riktning för att så småningom vrida hjulen. Kamaxeln är ansvarig för att öppna och stänga ventiler som släpper in och ut luft ur bilens motor.</p>
           </div>
         </div>
 
@@ -105,21 +102,21 @@
           <h3 class="card-header">Byte av länkarm</h3>
           <div class="card-body">
             <img src="./bilder/Querlenker-wechseln-2.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">En länkarm är inte en bildel som är unik för bilar utan kan vara en del av hjulupphängningen på diverse olika typer av fordon. När det gäller just bilar fungerar länkarmen som länken mellan bilens ram och spindelleden. Normalt är den triangelformad och den har två fästpunkter kring vilka den kan vridas.</p>
           </div>
         </div>
         <div class="cardB3">
           <h3 class="card-header">Hjulinställning</h3>
           <div class="card-body">
             <img src="./bilder/Hjulinställning.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">En hjulinställning innebär kort sammanfattat att hjulens vinklar justeras till rätt position – så att bilen går rakt fram.</p>
           </div>
         </div>
         <div class="cardB3">
           <h3 class="card-header">Plåtarbete</h3>
           <div class="card-body">
             <img src="./bilder/skadebesiktning_holmgrensbil_3000x2000.jpg" alt="bild" class="img">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">En mindre plåtskada är att när bilen kan köras och kan användas i trafik. Det vill säga att bilen har fått en plåtskada på karossen men ändå kan köras i trafiken utan att trafik säkerheten påverkas. Det kan vara någon typ av parkeringsskada eller liknande.</p>
           </div>
         </div>
 

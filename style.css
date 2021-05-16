@@ -6,39 +6,44 @@
     box-sizing: border-box;
 }
 
-
-/*fonts...
+/*fonts*/
 h1
 {
-
-}
-
-h2
-{
-
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #1E2749, #273469);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h3
 {
-
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #1E2749, #273969);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-h4
+label
 {
-
+    font-family: 'Roboto', sans-serif;
 }
 
 h5
 {
-
+    font-family: 'Roboto', sans-serif;
 }
 
 p
 {
-
+    font-family: 'Lato', sans-serif;
 }
 
-*/
+a
+{
+    font-family: 'Arvo', serif;
+}
 
 #nav-streck
 {
@@ -48,7 +53,15 @@ p
 
 #nav
 {
-    height: 20%;
+    height: 130px;
+}
+
+table /*bägge tabellerna får bra storlek samnt position*/
+{
+    width: 80%;
+    margin-left: 12.5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 /*regler bara för index*/
@@ -58,7 +71,7 @@ p
     height: 300px;
 }
 
-#p1 /*vänstra divven hoppas jag*/
+#p1 /*vänstra textstycket*/
 {
     display: inline-block;
     width: 30%;
@@ -71,7 +84,7 @@ p
     color: #FAFAFF;
 }
 
-#p2 /*förklarar sig själv*/
+#p2 /*högra textstycket*/
 {
     display: inline-block;
     width: 30%;
@@ -84,12 +97,12 @@ p
     color: #FAFAFF;
 }
 
-.cardB1, .cardB2, .cardB3 /*korten med info om vad verkstraden erbjuder för tjänser*/
+.cardB1, .cardB2, .cardB3 /*kortens position*/
 {
     display: inline-block;
 }
 
-#korten
+#korten /*kortens position*/
 {
     width: 80%;
     margin-top: 5%;
@@ -97,21 +110,24 @@ p
     margin-left: 12.5%;
 }
 
-.img
+.img /*bild i kortens storlek*/
 {
     height: 150px;
     width: auto;
 }
 
-/*regler bara för bokning*/
-table
+.card-text /*texten ska hålla sig innom kortet*/
 {
-    width: 80%;
-    margin-left: 12.5%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    width: 40%;
 }
 
+.card-header
+{
+    background-color: #1E2749;
+    color: #FAFAFF;
+}
+
+/*regler bara för bokning*/
 
 
 
